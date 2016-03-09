@@ -23,9 +23,17 @@
 
         <activity android:name=".service.IntentServiceTestActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".service.HelloService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".service.HelloActivity" />
+
     </application>
 
 </manifest>
