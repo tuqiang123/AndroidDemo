@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tu_qi.androiddemo" >
+    package="com.tu_qi.androiddemo">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
             android:name=".service.IntentServiceTestService"
             android:exported="false" />
 
-        <activity android:name=".service.IntentServiceTestActivity" >
+        <activity android:name=".service.IntentServiceTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -39,8 +39,14 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".service.BindingActivity" >
-        </activity>
+        <activity android:name=".service.BindingActivity" />
+
+        <service
+            android:name=".service.MessengerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".service.ActivityMessenger"></activity>
     </application>
 
 </manifest>
