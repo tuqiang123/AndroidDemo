@@ -46,7 +46,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".service.ActivityMessenger"></activity>
+        <activity android:name=".service.ActivityMessenger" />
+        <activity android:name=".pagertabstrip.PagerTabStripActivity"></activity>
     </application>
 
 </manifest>
