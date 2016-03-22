@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView mListView;
     private Context mContext;
     private String[] activitys = {"Intent Service  Test", "Service Test", "Extends Binder"
-            , "Service Messenger", "PagerTabStrip"};
+            , "Service Messenger", "PagerTabStrip", "PagerTitleStrip"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     case 4:
                         intent.setClass(mContext, com.tu_qi.androiddemo.pagertabstrip.PagerTabStripActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent.setClass(mContext, com.tu_qi.androiddemo.pagertitlestrip.PagerTitleStripActivity.class);
                         startActivity(intent);
                         break;
                     default:
