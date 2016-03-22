@@ -48,7 +48,8 @@
 
         <activity android:name=".service.ActivityMessenger" />
         <activity android:name=".pagertabstrip.PagerTabStripActivity" />
-        <activity android:name=".pagertitlestrip.PagerTitleStripActivity"></activity>
+        <activity android:name=".pagertitlestrip.PagerTitleStripActivity" />
+        <activity android:name=".fragmentpageradapter.FragmentPagerSupportActivity"></activity>
     </application>
 
 </manifest>
